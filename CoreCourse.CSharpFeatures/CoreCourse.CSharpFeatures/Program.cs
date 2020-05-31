@@ -13,10 +13,10 @@ namespace CoreCourse.CSharpFeatures
 
             foreach (Book book in Book.GetAll())
             {
-                string title = book?.Title;
-                int? pages = book?.Pages;
-                string sequelTitle = book?.Sequel?.Title;
-                bookInfos.Add(string.Format("Title: {0}, Pages: {1}, Sequel: {2}", title, pages, sequelTitle));
+                string title = book?.Title ?? "[untitled book]";
+                int? pages = book?.Pages ?? 0;
+                string sequelTitle = book?.Sequel?.Title ?? "[no sequels]";
+                bookInfos.Add($"Title: {title}, Pages: {pages:N0}, Sequel: {sequelTitle}");
             }
 
             PrintStrings(bookInfos);
