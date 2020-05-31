@@ -1,0 +1,13 @@
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.exe
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.deps.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.runtimeconfig.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.runtimeconfig.dev.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.dll
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.pdb
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.csprojAssemblyReference.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.csproj.CoreCompileInputs.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AssemblyInfoInputs.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AssemblyInfo.cs
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.dll
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.pdb
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures\CoreCourse.CSharpFeatures\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.genruntimeconfig.cache
