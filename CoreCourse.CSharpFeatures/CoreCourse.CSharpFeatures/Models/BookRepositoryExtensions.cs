@@ -24,5 +24,13 @@ namespace CoreCourse.CSharpFeatures.Models
                 if ((book?.Pages ?? 0) >= minimumPages)
                     yield return book;
         }
+
+        public static IEnumerable<Book> GetByFirstLetter(
+            this IEnumerable<Book> bookCollection, char firstLetter)
+        {
+            foreach (Book book in bookCollection)
+                if (book?.Title?[0] == firstLetter)
+                    yield return book;
+        }
     }
 }

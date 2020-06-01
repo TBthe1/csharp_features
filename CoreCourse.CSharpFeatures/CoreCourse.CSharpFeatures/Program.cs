@@ -36,6 +36,10 @@ namespace CoreCourse.CSharpFeatures
             int numberOfknownBooksWithOver350p = Book.GetAll().GetByMinimumPages(350).Count();
             bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}");
 
+            //get books starting with letter 
+            int numberOfKnownBooksWithLetterT = Book.GetAll().GetByFirstLetter('T').Count();
+            bookInfos.Add($"# books starting with 'T': {numberOfKnownBooksWithLetterT:N0}");
+
             PrintStrings(bookInfos);
 
             //prevent quitting in debug mode
