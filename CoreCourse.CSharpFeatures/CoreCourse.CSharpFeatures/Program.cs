@@ -22,23 +22,34 @@ namespace CoreCourse.CSharpFeatures
                 bookInfos.Add($"Title: {title}, Pages: {pages:N0}, Sequel: {sequelTitle}");
             }
 
-            BookRepository bookRepository = new BookRepository { Books = Book.GetAll() };
+            //BookRepository bookRepository = new BookRepository { Books = Book.GetAll() };
 
-            //calculate total number of pages
-            int totalPages = bookRepository.TotalPages();
-            bookInfos.Add($"\r\nTotal pages in repository: {totalPages:N0}");
+            ////calculate total number of pages
+            //int totalPages = bookRepository.TotalPages();
+            //bookInfos.Add($"\r\nTotal pages in repository: {totalPages:N0}");
 
-            //calculate total pages of all known books
-            int totalPagesKnownBooks = Book.GetAll().TotalPages();
-            bookInfos.Add($"Total pages of known books: {totalPagesKnownBooks:N0}");
+            ////calculate total pages of all known books
+            //int totalPagesKnownBooks = Book.GetAll().TotalPages();
+            //bookInfos.Add($"Total pages of known books: {totalPagesKnownBooks:N0}");
 
-            //count the number of known books with more than 350 pages
-            int numberOfknownBooksWithOver350p = Book.GetAll().GetByMinimumPages(350).Count();
+            ////count the number of known books with more than 350 pages
+            //int numberOfknownBooksWithOver350p = Book.GetAll().GetByMinimumPages(350).Count();
+            //bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}");
+
+            ////get books starting with letter 
+            //int numberOfKnownBooksWithLetterT = Book.GetAll().GetByFirstLetter('T').Count();
+            //bookInfos.Add($"# books starting with 'T': {numberOfKnownBooksWithLetterT:N0}");
+
+            //book GetByfilter()
+            var knownBooks = Book.GetAll();
+
+            int numberOfknownBooksWithOver350p = knownBooks.GetByFilter(p => (p?.Pages ?? 0) > 350).Count();
+            int numberOfknownBooksWithLetterT = knownBooks.GetByFilter(p => p?.Title?[0] == 'T').Count();
+            int numberOfKnownBooksLentOut = knownBooks.GetByFilter(p => p?.IsLent == true).Count();
+            //book GetByFilter() results 
             bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}");
-
-            //get books starting with letter 
-            int numberOfKnownBooksWithLetterT = Book.GetAll().GetByFirstLetter('T').Count();
-            bookInfos.Add($"# books starting with 'T': {numberOfKnownBooksWithLetterT:N0}");
+            bookInfos.Add($"# books starting with 'T': {numberOfknownBooksWithLetterT:N0}");
+            bookInfos.Add($"# books lent out: {numberOfKnownBooksLentOut:N0}");
 
             PrintStrings(bookInfos);
 
