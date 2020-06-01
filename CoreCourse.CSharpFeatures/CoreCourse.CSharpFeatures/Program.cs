@@ -40,16 +40,33 @@ namespace CoreCourse.CSharpFeatures
             //int numberOfKnownBooksWithLetterT = Book.GetAll().GetByFirstLetter('T').Count();
             //bookInfos.Add($"# books starting with 'T': {numberOfKnownBooksWithLetterT:N0}");
 
-            //book GetByfilter()
             var knownBooks = Book.GetAll();
 
-            int numberOfknownBooksWithOver350p = knownBooks.GetByFilter(p => (p?.Pages ?? 0) > 350).Count();
-            int numberOfknownBooksWithLetterT = knownBooks.GetByFilter(p => p?.Title?[0] == 'T').Count();
-            int numberOfKnownBooksLentOut = knownBooks.GetByFilter(p => p?.IsLent == true).Count();
-            //book GetByFilter() results 
-            bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}");
-            bookInfos.Add($"# books starting with 'T': {numberOfknownBooksWithLetterT:N0}");
+            ////book GetByfilter()
+            //int numberOfknownBooksWithOver350p = knownBooks.GetByFilter(p => (p?.Pages ?? 0) > 350).Count();
+            //int numberOfknownBooksWithLetterT = knownBooks.GetByFilter(p => p?.Title?[0] == 'T').Count();
+            //int numberOfKnownBooksLentOut = knownBooks.GetByFilter(p => p?.IsLent == true).Count();
+            ////book GetByFilter() results 
+            //bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}");
+            //bookInfos.Add($"# books starting with 'T': {numberOfknownBooksWithLetterT:N0}");
+            //bookInfos.Add($"# books lent out: {numberOfKnownBooksLentOut:N0}");
+
+            //Using System.Linq to replace GetByFilter()
+            int numberOfknownBooksWithOver350p = knownBooks.Count(p => (p?.Pages ?? 0) > 350); 
+            int numberOfknownBooksWithLetterT = knownBooks.Count(p => p?.Title?[0] == 'T'); 
+            int numberOfKnownBooksLentOut = knownBooks.Count(p => p?.IsLent == true); 
+            string firstBookLent = knownBooks.FirstOrDefault(p => p?.IsLent == true)?.Title; 
+            IEnumerable<string> lentOutKnownBooks = 
+                knownBooks.Where(p => p?.IsLent == true).Select(p => p.Title); 
+            
+            bookInfos.Add($"# books with > 350 pages: {numberOfknownBooksWithOver350p:N0}"); 
+            bookInfos.Add($"# books starting with 'T': {numberOfknownBooksWithLetterT:N0}"); 
             bookInfos.Add($"# books lent out: {numberOfKnownBooksLentOut:N0}");
+            bookInfos.Add($"\r\nFirst book lent out = {firstBookLent}"); 
+            
+            foreach (string title in lentOutKnownBooks) 
+                bookInfos.Add($">> Lent Out: {title}");
+
 
             PrintStrings(bookInfos);
 
