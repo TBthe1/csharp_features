@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CoreCourse.CSharpFeatures.AsyncApp
 {
@@ -21,31 +22,34 @@ namespace CoreCourse.CSharpFeatures.AsyncApp
                 new { Url = "https://www.github.com", Rating=75 },
             };
 
-            Console.WriteLine($"Checking {siteDefinitions.Length} sites...\r\n "); 
-            
+            Console.WriteLine($"Checking {siteDefinitions.Length} sites...\r\n ");
+
             //check sites 
-            CheckSites(siteDefinitions.Select(e => e.Url)); 
-            
+            Task checkTask = CheckSites(siteDefinitions.Select(e => e.Url));
+
             //calculate average 
             var averageRating = sitechecker.AverageRating(siteDefinitions.Select(sd => sd.Rating)); 
             Console.WriteLine($"\r\nAverage rating: {averageRating:N2}\r\n");
+
+            //wait for task to finish 
+            checkTask.Wait();
 
             //prevent quitting in debug mode 
             Console.WriteLine($"\r\nPress any key to exit");
             Console.Read();
         }
 
-        static void CheckSites(IEnumerable<string> urls)
+        static async Task CheckSites(IEnumerable<string> urls)
         {
-            ConsoleColor defaultColor = Console.ForegroundColor; 
+            ConsoleColor defaultColor = Console.ForegroundColor;
             
-            //check sites 
-            foreach (var url in urls) 
+            //check sites
+            foreach (var url in urls)
             {
-                var status = sitechecker.GetStatusCode(url);
-                if (status != 200) 
+                var status = await sitechecker.GetStatusCode(url);
+                if (status != 200)
                     Console.ForegroundColor = ConsoleColor.Red; 
-                Console.WriteLine($"{url} status: {status}");
+                Console.WriteLine($"{url} status: {status}"); 
                 Console.ForegroundColor = defaultColor; 
             }
         }
