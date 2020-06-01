@@ -1,0 +1,13 @@
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.exe
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.deps.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.runtimeconfig.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.runtimeconfig.dev.json
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.dll
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\bin\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.pdb
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.csprojAssemblyReference.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.csproj.CoreCompileInputs.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.AssemblyInfoInputs.cache
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.AssemblyInfo.cs
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.dll
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.pdb
+D:\Google Drive\Howest\B1\Cursus\csharpfeatures\CoreCourse.CSharpFeatures.AsyncApp\obj\Debug\netcoreapp3.1\CoreCourse.CSharpFeatures.AsyncApp.genruntimeconfig.cache
